@@ -1,5 +1,4 @@
-#include <stdio.h>      /* getchar(), putchar() */
-#include <stdlib.h>     /* EXIT_SUCCESS */
+#include <stdio.h>      /* getchar_unlocked(), putchar()_unlocked */
 
 int
 main(void)
@@ -22,16 +21,16 @@ main(void)
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     };
 
-    while ((a = getchar()) != '\n')
+    while ((a = getchar_unlocked()) != '\n')
         a_freq[a]++;
 
     /* assumed that input consists only of lower case */
     for (a = 'a'; a <= 'z'; a++) {
         for (i = 0; i < a_freq[a]; i++)
-            putchar(a);
+            putchar_unlocked(a);
     }
 
-    putchar('\n');
+    putchar_unlocked('\n');
 
-    return EXIT_SUCCESS;
+    return 0;
 }

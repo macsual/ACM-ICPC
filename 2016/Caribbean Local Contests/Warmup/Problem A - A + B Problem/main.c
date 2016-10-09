@@ -6,7 +6,7 @@ main(void)
 {
     int A, B;   /* inputs (range: 0 - 10) */
 
-    scanf("%d %d", &A, &B);
+    scanf("%d %d\n", &A, &B);
 
     printf("%d\n", A + B);
 

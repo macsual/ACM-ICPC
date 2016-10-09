@@ -12,7 +12,7 @@ main(void)
      */
     unsigned A, B;
 
-    scanf("%u %u", &A, &B);
+    scanf("%u %u\n", &A, &B);
 
     /*
      * The output expression has an unsigned integer type because either input
