@@ -19,9 +19,9 @@ main(void)
     int T;  /* test cases (1 <= T <= 50) */
 
     /*
-     * The largest digit sum is 81000. The largest sum will come from the
-     * number with the most 9's in it which is 10^1000 - 1 that has 9000
-     * consecutive nines, therefore that digit sum is 9 * 9000.
+     * The largest digit sum is 9000. The largest sum will come from the
+     * number with the most 9's in it which is 10^1000 - 1 that has 1000
+     * consecutive nines, therefore that digit sum is 9 * 1000.
      */
     int digit_sum;
 
